@@ -13,6 +13,7 @@ cd backend
 pip install -r requirements.txt
 python -m uvicorn app.main:app --reload
 
+
 ## Current behavior
 
 - The frontend now loads the admin dashboard and volunteer workspace from backend endpoints when available.
