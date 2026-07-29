@@ -1,0 +1,18 @@
+{
+  "name": "Saajha Volunteer App",
+  "short_name": "Saajha",
+  "description": "Volunteer and parent outreach progressive web app",
+  "start_url": "/login",
+  "display": "standalone",
+  "background_color": "#f7fbff",
+  "theme_color": "#126ee2",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/pwa-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

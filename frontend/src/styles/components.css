@@ -1,0 +1,148 @@
+﻿/* Brand */
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.brand--compact {
+  justify-content: flex-start;
+}
+
+.brand__mark {
+  position: relative;
+  width: 58px;
+  height: 58px;
+  flex: none;
+}
+
+.brand--compact .brand__mark {
+  width: 46px;
+  height: 46px;
+}
+
+.brand__mark span {
+  position: absolute;
+  top: 0;
+  width: 13px;
+  height: 13px;
+  background: #18bdd0;
+  border-radius: 999px;
+}
+
+.brand__mark span:first-child {
+  left: 12px;
+}
+
+.brand__mark span:nth-child(2) {
+  right: 12px;
+}
+
+.brand__mark svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--color-teal);
+}
+
+.brand__mark svg path:nth-child(2) {
+  fill: none;
+  stroke: white;
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+
+.brand__text strong {
+  display: block;
+  color: var(--color-text);
+  font-size: 27px;
+  line-height: 1;
+}
+
+.brand--compact .brand__text strong {
+  font-size: 20px;
+}
+
+.brand__text small {
+  display: block;
+  color: var(--color-teal);
+  font-weight: 800;
+  margin-top: 6px;
+}
+
+/* UI primitives */
+
+.card,
+.metric-card,
+.login-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+.card {
+  padding: 18px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.section-header h2 {
+  margin: 0;
+  color: #004fb8;
+  font-size: 18px;
+}
+
+.section-header h2 span {
+  color: var(--color-muted);
+  font-weight: 500;
+}
+
+.section-header button {
+  border: 0;
+  background: transparent;
+  color: var(--color-muted);
+  font-size: 24px;
+}
+
+.btn {
+  min-height: 46px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 0 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.btn--primary {
+  color: white;
+  background: linear-gradient(135deg, var(--color-teal), #008c8b);
+  border-color: transparent;
+}
+
+.btn--secondary {
+  color: #34425f;
+  background: white;
+  border-color: #cbd8e8;
+}
+
+.btn--ghost {
+  color: var(--color-primary);
+  background: transparent;
+}
+
+.btn--full {
+  width: 100%;
+}
+

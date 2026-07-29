@@ -1,0 +1,15 @@
+[project]
+name = "Saajha-backend"
+version = "0.2.0"
+description = "FastAPI backend scaffold for Saajha"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "pydantic-settings",
+  "python-dotenv",
+  "httpx"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

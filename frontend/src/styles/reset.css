@@ -1,0 +1,66 @@
+﻿:root {
+  --color-bg: #f4f8fd;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f7fbff;
+  --color-text: #071c45;
+  --color-muted: #62708d;
+  --color-primary: #126ee2;
+  --color-primary-dark: #0d58c6;
+  --color-teal: #079c9c;
+  --color-green: #18a86b;
+  --color-orange: #ff8a2a;
+  --color-purple: #7449d8;
+  --color-border: #dfe8f4;
+  --shadow-card: 0 12px 32px rgba(17, 48, 87, 0.08);
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --sidebar-width: 264px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--color-bg);
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  color: var(--color-text);
+  background:
+    radial-gradient(circle at top left, rgba(18, 110, 226, 0.08), transparent 32rem),
+    linear-gradient(135deg, #fbfdff, #edf5fd);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: #005dff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+.app-only-mobile {
+  display: none;
+}
+

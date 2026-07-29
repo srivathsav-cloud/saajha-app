@@ -1,0 +1,25 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=local
+      - ALLOWED_ORIGINS=http://localhost:5173
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  frontend:
+    image: node:22-alpine
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    ports:
+      - "5173:5173"
+    environment:
+      - DEV_PROXY_TARGET=http://backend:8000
+      - VITE_API_BASE_URL=/api
+      - VITE_ENABLE_FRONTEND_LOGGING=true
+    depends_on:
+      - backend
